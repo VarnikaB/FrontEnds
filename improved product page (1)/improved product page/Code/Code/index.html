@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPKING | Online Shopping</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=603394e2b7ebd200116dff8f&product=inline-share-buttons" async="async"></script>
+</head>
+
+<body>
+    <div class="container_">
+        <div id="first_row" class="flex_row">
+            <div id="select_country">
+                <select name="country" id="country">
+                    <option value="india">India</option>
+                    <option value="australia">Australia</option>
+                    <option value="china">China</option>
+                    <option value="srilanka">Sri Lanka</option>
+                </select>
+            </div>
+            <div class="login_signup">
+                <a class="a_" href="#">Login</a>
+                <a class="a_" href="#">Sign Up</a>
+            </div>
+        </div>
+        <div id="mobile_hamburger">
+            <div id="top_bar">
+                <a class='a_' href="#"><h1 class="h1_">SHOPKING</h1></a>
+                <div id="action_box" class="flex_row">
+                    <div id="search_txt">
+                        <form action="a.php">
+                            <input type="text" placeholder="Search here">
+                        </form>
+                    </div>
+                    <div id="search_btn">
+                        <img src="Images/search.png" alt="search">
+                    </div>
+                    <div id="cart">
+                        <img src="Images/cart.png" alt="cart">
+                    </div>
+                </div>
+                <a class="a_" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars" id="icon_font"></i>
+                </a>
+            </div>
+            <ul class="ul_" id="hamburger_list">
+                <li><a class="a_" href="#">Men</a></li>
+                <li><a class="a_" href="#">Women</a></li>
+                <li><a class="a_" href="#">Kids</a></li>
+                <li><a class="a_" href="#">Home & Living</a></li>
+                <li><a class="a_" href="#">Offers</a></li>
+                <li><a class="a_" href="#">Contact Us</a></li>
+            </ul>
+
+
+        </div>
+        <div id="second_row" class="flex_row">
+            
+            <div id="company_name" class="margin_padd">
+                <a class="a_" href="#"><h1 class="h1_">SHOPKING</h1></a>
+            </div>
+            <div id="list" class="margin_padd">
+                <ul class="flex_row ul_">
+                    <li><a class="a_" href="#">Men</a></li>
+                    <li><a class="a_" href="#">Women</a></li>
+                    <li><a class="a_" href="#">Kids</a></li>
+                    <li><a class="a_" href="#">Home &amp; Living</a></li>
+                    <li><a class="a_" href="#">Offers</a></li>
+                    <li><a class="a_" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="action_box" class="flex_row margin_padd">
+                <div id="search_txt">
+                    <form action="a.php">
+                        <input type="text" placeholder="Search here">
+                    </form>
+                </div>
+                <div id="search_btn">
+                    <img src="Images/search.png" alt="search">
+                </div>
+                <div id="cart">
+                    <img src="Images/cart.png" alt="cart">
+                </div>
+            </div>
+        </div>
+        
+        <div id="body" class="flex_row">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Images/blue_model_1.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Images/blue_model_2.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Images/blue_model_3.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Images/blue_model_4.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Images/blue_model_5.webp" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+            
+            <div id="first_col" >
+                <img src="Images/blue_model_1.webp" class="active_model" alt="1" id="model_1" onclick="viewimage(event)">
+                <img src="Images/blue_model_2.webp" alt="1" id="model_2" onclick="viewimage(event)">
+                <img src="Images/blue_model_3.webp" alt="1" id="model_3" onclick="viewimage(event)">
+                <img src="Images/blue_model_4.webp" alt="1" id="model_4" onclick="viewimage(event)">
+                <img src="Images/blue_model_5.webp" alt="1" id="model_5" onclick="viewimage(event)">
+            </div>
+            <div id="second_col" class="col-md-10 col-sm-10 col-lg-6">
+                <img src="Images/blue_model_1.webp" alt="" id="main_model">
+                <div id="delivery" class="flex_row">
+                    <h3 class="h3_">
+                        DELIVERY OPTIONS
+                    </h3>
+                    <span>
+                        <img src="Images/delivery.png" alt="">
+                    </span>
+                </div>
+                
+                <div id="delivery_form">
+                    <form action="#">
+                        <input type="text" name="pincode" id="pincode" placeholder="Enter pincode">
+                        <input type="submit" name="check" id="check_pincode" value="Check">
+                    </form>
+                </div>
+
+            </div>
+            <div id="third_col" class="col-md-10 col-sm-10 col-lg-6">
+                <div id="title_product">
+
+                    <h2 class="h2_">Men's Classic T-shirt</h2>
+                    <br>
+                    <p class="p_"> <b>&#8377; 560</b> <del>999</del> <span class="red">( 44% OFF)</span></p>
+                    <p class="p_ green" style="font-size: 13px;">Inclusive of all taxes</p>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <h5>In Stock</h5>
+                    <h6><b>Deal Price:</b>	₹ 309.00 <b>FREE Delivery.</b> No Minimum order value for first order in this category </h6>
+                     <h7> <b>You Save:</b>	₹ 190.00 (38%)</h7> 
+                </div>
+                <br>
+                <div class="description">
+                    <p>A high-quality T-shirt in a great fit will slot seamlessly
+                     into your existing wardrobe and you’ll get good use for years to come.</p>
+                </div>
+                <div id="color_selection">
+                    <h3 class="h3_">SELECT COLOR</h3>
+                    <button class="btn_ color-hover" id="btn_red" value="red" onclick="change_color(event)"></button>
+                    <button class="btn_ color-hover active_color" id="btn_blue" value="blue" onclick="change_color(event)"></button>
+                    <button class="btn_ color-hover" id="btn_black" value="black" onclick="change_color(event)"></button>
+                </div>
+                <br>
+                <div id="size_selection">
+                    <h3 class="h3_">SELECT SIZE</h3>
+
+                    <button class="btn_ size-hover active_size" onclick="change_size(event)">S</button>
+                    <button class="btn_ size-hover" onclick="change_size(event)">M</button>
+                    <button class="btn_ size-hover" onclick="change_size(event)">L</button>
+                    <button class="btn_ size-hover" onclick="change_size(event)">XL</button>
+                </div>
+                <br>
+                                
+                <div class="list">
+                    <i class="i fa fa-facebook"> </i>
+                    <i class="i fa fa-instagram"> </i>
+                    <i class="i fa fa-google"> </i>
+                    <i class="i fa fa-twitter"> </i>
+                    <i class="i fa fa-tumblr"> </i>
+                    <i class="i fa fa-yahoo"> </i>
+                </div>
+
+                <div id="addtocart">
+                    <button class="btn_cart">
+                        <img src="Images/cart.png" alt="cart" style="outline: none;" id="invert" >ADD TO CART
+                    </button>
+                    <button class="btn_cart">
+                        <img src="Images/light.png" alt="cart" style="outline: none;"> BUY NOW
+                    </button>
+                </div>
+                <br>
+                
+
+                
+            </div>
+        </div>
+        <div id="PLUS1" class="user_box">
+            <div id="product_details" class="flex_row">
+                <span>
+                    <h3 class="h3_">PRODUCT DETAILS</h3>
+                </span>
+                <span id="plus">
+                    <img src="Images/subtract.png" alt="" onclick="ToggleHide(event)">
+                </span>
+            </div>
+            <hr>
+            <div id="description" class="toggleclass">
+                <p class="p_">
+                    GAP is one of the world's most iconic apparel and accessories brands and the authority on
+                    American casual style. Today, GAP continues to be the best destination for wardrobe
+                    essentials such as denim, tees, hoodies and great-fitting pants.
+                </p>
+                <ul class="ul_ container">
+                    <li>Soft cotton jersey</li>
+                    <li>Short sleeves</li>
+                    <li>Rib-knit crew neck</li>
+                    <li>Straight</li>
+                    <li>easy fit</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div id="PLUS2" class="user_box">
+            
+            <div id="customer_review " >
+                <span id="plus row">
+                    <h3 class="h3_ col-8">CUSTOMER REVIEWS</h3>
+                    <img src="Images/subtract.png" height="20" alt="" onclick="ToggleHide(event)" style="float: right;">
+                </span>
+                
+                <span >
+                
+                <hr >
+                    <span class="toggleclass">
+                    <i class="fa fa-star" aria-hidden="true" style="color: black"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i><br>
+                    <form >
+                        <div >
+                          <label for="exampleFormControlInput1"><b>Your Name</b></label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" >
+                        </div>
+                        
+                        <div >
+                          <label for="exampleFormControlTextarea1"><b>Summary</b></label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div >
+                            <label for="exampleFormControlTextarea1"><b>Review</b></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div><br>
+                          <button type="submit" class="btn btn-primary mt-10">Submit Review</button>
+                      </form>
+                      </span>
+                      
+                    <!-- <button type="submit"  class="btn btn-primary" value="Submit">Submit Review</button> -->
+            </span>
+            
+            </div>
+            
+            <div id="reviews" class="toggleclass1">
+                <div class="bottomborder">
+
+                    <p class="p_"><b>Quality is good and it's perfect fit</b>
+                        <br>
+                        <i>Subham | <small>27 June 2020</small></i>
+                    </p>
+                </div>
+                <div class="bottomborder">
+
+                    <p class="p_"><b>Color is as good as it is shown</b>
+                        <br>
+                        <i>Priya | <small>17 May 2020</small></i>
+                    </p>
+                </div>
+                <div class="bottomborder">
+
+                    <p class="p_"><b>Fitting is very good and this look awesome</b>
+                        <br>
+                        <i>Akash | <small>14 January 2021</small></i>
+                    </p>
+                </div>
+                <div class="bottomborder">
+
+                    <p class="p_"><b>I am in love with this product</b>
+                        <br>
+                        <i>Mayank | <small>13 July 2019</small></i>
+                    </p>
+                </div>
+                <div class="bottomborder">
+                    <p class="p_"><b>It values for money</b>
+                        
+                        <br>
+                        <i>Keshav | <small>03 March 2020</small></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <!-- This is footer -->
+            <div id="footer">
+                <div id="footer_first_col" class="flex_col">
+                    <div id="social_link">
+                        <h3 class="h3_">REACH US</h3>
+                        <ul class="flex_row ul_" id="link_col">
+                            <li  class="social_list">
+                                <a class="a_" href="#"><img src="Images/insta.png"></a>
+                            </li>
+                            <li class="social_list">
+                                <a class="a_" href="#"><img src="Images/fb.png"></a>
+                            </li>
+                            <li class="social_list">
+                                <a class="a_" href="#"><img src="Images/twitter.png"></a>
+                            </li>
+                            <li class="social_list">
+                                <a class="a_" href="#"><img src="Images/youtube.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div id="footer_second_col" class="flex_col">
+                    <h3 class="h3_">SHOP</h3>
+                    <ul class="ul_">
+                        <li><a class="a_" href="#">Men</a></li>
+                        <li><a class="a_" href="#">Women</a></li>
+                        <li><a class="a_" href="#">Children</a></li>
+                        <li><a class="a_" href="#">Home & Living</a></li>
+                        <li><a class="a_" href="#">Offers</a></li>
+                    </ul>
+                </div>
+                <div id="footer_third_col" class="flex_col">
+                    <h3 class="h3_">COMPANY</h3>
+                    <ul class="ul_">
+                        <li><a class="a_" href="#">About Us</a></li>
+                        <li><a class="a_" href="#">Contact Us</a></li>
+                        <li><a class="a_" href="#">Career</a></li>
+                        <li><a class="a_" href="#">Terms & Conditions</a></li>
+                        <li><a class="a_" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div id="footer_fourth_col" class="flex_col">
+                    <h3 class="h3_">CONTACT US</h3>
+                    <ul class="ul_">
+                        <li>Toll Free - 1800 23 00000</li>
+                        <li>E-mail - xyzfeedback@gmail.com</li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+            
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

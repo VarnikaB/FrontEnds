@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shopsky | Product</title>
+		<script src='jquery-1.8.3.min.js'></script>
+		<script src='jquery.elevatezoom.js'></script>
+		<meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">	  
+		  <script type="text/javascript" src="data.json"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+		<script src='jquery-1.8.3.min.js'></script>
+		<script src='jquery.elevatezoom.js'></script>
+
+	<script>
+	function magnify(imgID, zoom) 
+	{
+	  var img, glass, w, h, bw;
+	  img = document.getElementById(imgID);
+	  /*create magnifier glass:*/
+	  glass = document.createElement("DIV");
+	  glass.setAttribute("class", "img-magnifier-glass col-1 col-sm-2 col-lg-5 col-md-5");
+	  /*insert magnifier glass:*/
+	  img.parentElement.insertBefore(glass, img);
+	  /*set background properties for the magnifier glass:*/
+	  glass.style.backgroundImage = "url('" + img.src + "')";
+	  glass.style.backgroundRepeat = "no-repeat";
+	  glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+	  bw = 3;
+	  w = glass.offsetWidth / 2;
+	  h = glass.offsetHeight / 2;
+	  /*execute a function when someone moves the magnifier glass over the image:*/
+	  glass.addEventListener("mousemove", moveMagnifier);
+	  img.addEventListener("mousemove", moveMagnifier);
+	  
+	  /*and also for touch screens:*/
+	  glass.addEventListener("touchmove", moveMagnifier);
+	  img.addEventListener("touchmove", moveMagnifier);
+	  function moveMagnifier(e) {
+	    var pos, x, y;
+	    /*prevent any other actions that may occur when moving over the image*/
+	    e.preventDefault();
+	    /*get the cursor's x and y positions:*/
+	    pos = getCursorPos(e);
+	    x = pos.x;
+	    y = pos.y;
+	    /*prevent the magnifier glass from being positioned outside the image:*/
+	    if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+	    if (x < w / zoom) {x = w / zoom;}
+	    if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+	    if (y < h / zoom) {y = h / zoom;}
+	    /*set the position of the magnifier glass:*/
+	    glass.style.left = (x - w) + "px";
+	    glass.style.top = (y - h) + "px";
+	    /*display what the magnifier glass "sees":*/
+	    glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+	  }
+	  function getCursorPos(e) {
+	    var a, x = 0, y = 0;
+	    e = e || window.event;
+	    /*get the x and y positions of the image:*/
+	    a = img.getBoundingClientRect();
+	    /*calculate the cursor's x and y coordinates, relative to the image:*/
+	    x = e.pageX - a.left;
+	    y = e.pageY - a.top;
+	    /*consider any page scrolling:*/
+	    x = x - window.pageXOffset;
+	    y = y - window.pageYOffset;
+	    return {x : x, y : y};
+	  }
+	}
+	</script>
+	</head>
+	<style>
+		
+#gallery_01 img
+{
+border:2px solid white;
+}
+
+.active img
+{
+border:2px solid #333 !important;
+}
+.shadow{
+	background-color: antiquewhite;
+}
+		header {
+        	width: 50%;
+        	margin: 50px auto;
+	    }
+	    body{
+	      	font-family: 'Open Sans', sans-serif;
+	      
+	    }
+	    footer {
+	           background:#2A2D35;
+	           padding:10px 0 0px 0;
+	    }
+	    footer h3 {
+	           color:#fff;
+	           font-size:20px;
+	           font-weight:600;
+	    }
+	    footer ul li {
+	           line-height:30px;
+	    }
+	    footer a, footer p {
+	           color:#b2b9c1;
+	           font-size:15px;
+	           font-weight:600;
+	    }
+	    footer a {
+	           color:#b2b9c1;
+	           text-decoration:none;
+	           font-size: 12px;
+	    }
+	    footer a:hover {
+	          color:#fff;
+	          text-decoration: none;
+	    }
+	    footer .copyright {
+	           padding-top:25px;
+	           border-top:1px solid #373b44;
+	    }
+	    i{
+	     color: white;
+	    }
+	    footer .copyright p{
+	          font-size: 12px;
+	          line-height: 12px;
+	    }
+	    footer .copyright a:hover{
+	          text-decoration: none;
+	          text-shadow: 1px 2px purple;
+	   }
+	   input[type="number"]{
+	   	  position: relative;
+		    margin: 0 0 1rem;
+		    border: 0.5px groove lightgray;
+		    background-image: linear-gradient(lightgray,rgb(247,247,247));
+		    text-align: center;
+		    border-radius: 0.5em;		    
+		    padding: .2rem;
+		    width: 4em;
+		    height: 2em;
+		    font-weight: 500;
+	   }
+	   .navbar ul li a{
+	      float: left; color: white; padding-left: 35px;
+	   }
+	   * {box-sizing: border-box;}
+
+		.img-magnifier-container {
+		  position:relative;
+		}
+
+		.img-magnifier-glass {
+			margin-top: 10px;
+		  position: absolute;
+		  border: 3px solid #000;
+		  border-radius: 50%;
+		  cursor: none;
+		  width: 100px;
+		  height: 100px;
+		}
+	</style>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	        <a href="index.html" class="navbar-brand text-center ml-auto col-lg-4 col-sm-3" href="#" data-abc="true" ><strong>Shopsky</strong></a> 
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-toggle" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse navbar-toggle" id="navbarNavAltMarkup">
+	          <form class="input-group form-inline my-2 my-lg-0"> 
+	            <input class="form-control col-lg-6" type="text" placeholder="Search"> 
+	            <div class="input-group-append"><button class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button></div>
+	            
+	          </form>
+	          <div class="navbar-nav" >
+	            <a class="nav-item nav-link" href="signup.php" data-toggle="tooltip" data-placement="bottom" title="Login"><i class="fa fa-user"></i></a>
+	            <a class="nav-item nav-link" href="cart.php" data-toggle="tooltip" data-placement="bottom" title="Shopping Cart"><i class="fa fa-shopping-cart">&nbsp;</i></a>
+				  <a class="nav-item nav-link" href="success.php" data-toggle="tooltip" data-placement="bottom" title="Orders"><i class="fa fa-shopping-bag"></i></a>
+	          </div>
+	        </div>
+		</nav>
+		<script>
+		$(document).ready(function(){
+		  $('[data-toggle="tooltip"]').tooltip();   
+		});
+		</script>
+		<nav class="navbar navbar-expand-lg navbar-dark py-0 bg-dark px-lg-2">
+			
+				<div class="collapse navbar-collapse navbar-toggle" id="navbarNavAltMarkup">
+					<ul class="navbar-center navbar-nav list-unstyled" style="width:100%;text-align:center">
+						<li><a class="nav-item nav-link pl-lg-5 " href="#">Men Clothing</a></li>
+						<li><a class="nav-item nav-link pl-lg-5 " href="#">Women Clothing</a></li>
+						<li><a class="nav-item nav-link pl-lg-5 " href="#">Kids Clothing</a></li>
+				   </ul>
+			   </div>
+		</nav>
+		<script>
+			var queryString = location.search.substring(1);
+			var a = queryString.substring(0,queryString.indexOf("|"));
+			var mydata = data;
+			//alert(mydata[a]["brand"]);
+		</script>
+		<div class="container-fluid" style="background-color: #fae0eb;">
+    		<div class="single_product">
+		        <div class="container-fluid" style=" padding: 11px;">
+		            <div class="row" style="padding-bottom: 1em;">        	
+			            	
+		                <div class="col-lg-6 order-lg-2 col-sm-8 order-1" >
+							<div align="center">
+		
+		                    <img id="zoom_01" src='https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/9301353/2019/4/13/52b7acba-7a96-463f-bc0e-10d7f49a65cf1555145453678-Tissu-Women-Blue-Printed-A-Line-Kurta-291555145452084-1.jpg' height="500"  />
+							
+									<script>
+										document.getElementById("zoom_01").src = mydata[a]["src"]; 
+									$('#zoom_01').elevateZoom({tint:true, tintColour:'#FFFFF3', tintOpacity:0.5});
+							</script>
+							</div>
+							
+		                    <div class="row">
+			                    <button type="button" class="btn btn-warning col-md-6 col-sm-12">Add to Cart</button> 
+			                    <button type="button" class="btn btn-danger col-md-6 col-sm-12">Buy Now</button>
+			                </div>
+		                </div>
+		                <div class="col-lg-5 order-3" style="line-height: 20px; padding-left: 5%; padding-top: 1em;">
+		                    <div class="product_description">
+		                        <div id="product_name" class="product_name" style="padding-bottom: 5px;"><b style="font-size: 2em;">Amazon Brand - Harpa</b><br>Goodthreads Standard-Fit Long-Sleeve Plaid<br></div><div style="padding-top: 1em;padding-bottom:1em;"><span style="font-size: 1.4em;"> Hanes Women's Long Sleeve </span><small style="color: green">In stock</small></div>
+		                        <script>
+									document.getElementById("product_name").innerHTML ='<b style="font-size: 2em;">' +  mydata[a]["brand"]+'</b><br>'; 
+								</script>
+								<div class="product-rating">
+		                        	<span class="badge badge-success" style="height: 1.6em;font-size: 0.8em;"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i></span> 
+		                        	<span class="rating-review"><em><small>35 Ratings </small></em>|<em><small> 45 Reviews</small></em></span>
+		                        </div>
+		                        <div style="padding-top: 8px;"> 
+		                        	<span id="price" class="product_price" ><b>&#8377; 2,820</b></span> 
+										<script>
+											document.getElementById("price").innerHTML = '<b>&#8377; '+mydata[a]["price"] + '</b>';
+										</script>
+									<strike class="product_discount"> <span style='color:black'><small>&#8377; 2,099</small></span></strike> 
+										
+		                        </div>
+								
+		                        <hr class="singleline">
+								<div> <span class="product_info">100% Cotton; </span><br> <span class="product_info">Imported</span><br> <span class="product_info">Contrast color three-button placket</span><br> <span class="product_info">Raglan sleeves for a sporty look</span><br> <span class="product_info">All the comfort of Hanes with our famous tag less neckline</span><br><span class="product_info">Famously durable beefy-t fabric</span><br><span class="product_info">Button closure</span><br><span class="product_info">Machine Wash</span> <br> </div>
+		                        <div>
+		                           
+		                            <div class="row" style="margin-top: 15px;">
+		                                <div class="col-xs-12" style="margin-left: 15px;"> <span class="product_options">Size</span><br> <button class="btn btn-primary btn-sm">XS</button> <button class="btn btn-primary btn-sm">S</button> <button class="btn btn-primary btn-sm">M</button> <button class="btn btn-primary btn-sm">LS</button> <button class="btn btn-primary btn-sm">L</button> 
+		                                 <button class="btn btn-primary btn-sm">XXL</button> <button class="btn btn-primary btn-sm">XXL</button> </div>
+		                            </div>
+		                        </div>
+		                        <hr class="singleline">
+		                        
+		                        <div class="row">
+		                            <div class="col-xs-6" style="margin-left: 13px;">
+		                                <div class="product_quantity"> 
+		                                	<span>Quantity: &nbsp; </span><input type="number"  min="1" value=1>		                                    
+		                                </div>
+		                            </div>
+		                           
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>         
+		             <center><span class=" deal-text" style="font-size: 1.5em;"><b>Specifications</b></span></center>		                
+		           
+		            <div class="row">
+		                <div class="col-md-12">
+		                   <center> <em><table >
+		                        <tbody>
+		                            <tr >
+		                                <td >Sales Package :</td>
+		                                <td >&nbsp; 2 in 1 Shirts, Cotton Silk</td>
+		                            </tr>
+		                            <tr >
+		                                <td >Item Number :</td>
+		                                <td >&nbsp; 14-dh0107TU </td>
+		                            </tr>
+		                           
+		                            <tr>
+		                                <td >Color :</td>
+		                                <td >&nbsp; Black</td>
+		                            </tr>
+		                            <tr >
+		                                <td >Suitable for :</td>
+		                                <td >&nbsp; Men </td>
+		                            </tr>
+									<tr>
+		                            	<td >Brand :</td>
+		                                <td >&nbsp; Reyon </td>
+		                            </tr>
+		                        </tbody>
+		                    </table></em></center>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		
+		<section class="container-fluid text-center" style="background-color: #dac2cc;">
+
+			<b style="font-size: 35px;">Related Products</b>
+			<div class="row">  
+			  <div class="col-md-6 col-lg-3 mb-5">
+				<div class="shadow" style="margin-left: 5px;;">
+						<img class="img  " height="250"
+						  src="https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/1975447/2017/6/20/11497965378585-White-Floral-Embroidered-A-Line-Kurta-6111497965378309-1.jpg">
+				
+				  <div class="pt-4">
+					<h5>White Embroidered Line Kurta</h5>
+					<h6>Rs.1530 </h6>
+				  </div>
+				</div>
+			  </div>
+			   <!-- Grid column -->
+			  <div class="col-md-6 col-lg-3 mb-5">
+		  
+				
+				<div class="shadow" style="margin-left: 5px;;">
+		  
+					
+					<img class="img  " height="250"
+					  src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/1870904/2017/5/4/11493899434838-Shree-Women-Green-Embroidered-A-Line-Kurta-5751493899434598-1.jpg" alt="Sample">
+				
+				  <div class="pt-4">
+		  
+					<h5>Women Green Embroidered</h5>
+					<h6>Rs.1830</h6>
+		  
+				  </div>
+				</div>
+			  </div>
+			  <!-- Grid column -->
+		  
+			  <!-- Grid column -->
+			  <div class="col-md-6 col-lg-3 mb-5">
+		  
+				<!-- Card -->
+				<div class="shadow" style="margin-left: 5px;;">
+		  
+				  
+					<img class="img  " height="250"
+					  src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/1865120/2018/3/10/11520659390217-W-Women-White--Black-Woven-Design-Straight-Kurta-5411520659389988-1.jpg" alt="Sample">
+					
+					
+				  <div class="pt-4">
+		  
+					<h5>Women Black Design Kurta</h5>
+					<h6>Rs.1150</h6>
+				  </div>
+				</div>
+			  </div>
+			  
+			  <div class="col-md-6 col-lg-3 mb-5">
+		  
+				
+				<div class="shadow" style="margin-left: 5px;;">
+					<img class="img  " height="250"
+					  src="https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/2159231/2019/6/10/3a1a61f1-7325-4ca7-bfe2-9119f738872c1560167833508-W-Women-Off-White--Yellow-Floral-Print-Straight-Kurta-221560-1.jpg" alt="Sample">
+					
+				  <div class="pt-4">
+		  
+					<h5>White Yellow Floral Kurta</h5>
+					<h6>Rs.1960</h6>
+		  
+				  </div> 
+		  
+				</div>
+				<!-- Card -->
+		  
+			  </div>
+			  <!-- Grid column -->
+		  
+			</div>
+			<!-- Grid row -->
+		  
+		  </section>
+		<!-- Product -->
+		<footer id="as-footer">
+          <div class="container" style="text-align: center;">
+              <div class="row upper">
+                  <div class="col-sm-12 col-md-2">
+                      <div class="as-footer-box mt-4">
+                          <h3 class="mt-3">About</h3>
+                          <ul class="list-unstyled">
+                              <li><a href="#">Contact Us</a></li>
+                              <li><a href="#">Feedback</a></li>
+                              <li><a href="#">About Us</a></li>
+                              <li><a href="#">Careers</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-sm-12 col-md-2">
+                      <div class="as-footer-box mt-4">
+                          <h3 class="mt-3">Help</h3>
+                          <ul class="list-unstyled">
+                              <li><a href="#">Payments</a></li>
+                              <li><a href="#">Return</a></li>
+                              <li><a href="#">FAQ</a></li>
+                         </ul>
+                      </div>
+                  </div>
+                  <div class="col-sm-12 col-md-2">
+                      <div class="as-footer-box mt-4">
+                          <h3 class="mt-3">Policy</h3>
+                          <ul class="list-unstyled">
+                              <li><a href="#">Return Policy</a></li>
+                              <li><a href="#">Terms of Use</a></li>
+                              <li><a href="#">Security</a></li>
+                              <li><a href="#">Privacy</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-sm-12 col-md-2">
+                      <div class="as-footer-box mt-4">
+                          <h3 class="mt-3">Social</h3>
+                          <ul class="list-unstyled">
+                              <li><a href="#"><i class="fa fa-linkedin" ></i></a></li>
+                              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4">
+                      <div class="as-footer-box mt-4">
+                          <h3 class="mt-3">Make money with us</h3>
+                          <ul class="list-unstyled">
+                              <li><a href="#">Sell on Shopsky</a></li>
+                              <li><a href="#">Advertise Your Products</a></li>
+                              <li><a href="#">Become an Affliate</a></li>
+                              <li><a href="#"><i class="fa fa-android"></i>&nbsp;&nbsp;App Download</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="copyright text-center mt-4 ">
+                          <p>Online Shopping Site in India for Mobiles, Electronics, Computers, Accessories, Foods, Fashion, etc. Best Offers!</p>
+                          <p>Copyright  &copy; 2020 All rights reserved | <a href="https://www.shopsky.in" style="color: violet;">Shopsky India</a></p>
+                          
+                    	</div>
+                 	</div>
+              	</div>
+              
+          	</div>
+      	</footer>
+					
+	</body>
+</html>
+

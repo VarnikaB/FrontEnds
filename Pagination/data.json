@@ -1,0 +1,326 @@
+ data = {
+    "1" : {
+            "brand": "Tissu Women Printed Line Kurta",
+            "price":"1239",
+            "src": "https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/9301353/2019/4/13/52b7acba-7a96-463f-bc0e-10d7f49a65cf1555145453678-Tissu-Women-Blue-Printed-A-Line-Kurta-291555145452084-1.jpg"
+            }
+            ,
+    "2" : {
+             "brand": "White Embroidered Line Kurta",
+             "price":"1530",
+             "src": "https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/1975447/2017/6/20/11497965378585-White-Floral-Embroidered-A-Line-Kurta-6111497965378309-1.jpg"
+            }
+            ,
+    "3" : {
+            "brand": "Women Green Embroidered Line Kurta",
+            "price":"1830",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/1870904/2017/5/4/11493899434838-Shree-Women-Green-Embroidered-A-Line-Kurta-5751493899434598-1.jpg"
+            }
+            ,
+    "4" : {
+            "brand": "Women Black Design Kurta",
+            "price":"1150",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/1865120/2018/3/10/11520659390217-W-Women-White--Black-Woven-Design-Straight-Kurta-5411520659389988-1.jpg"
+            }
+            ,
+    "5" : {
+            "brand": "White Yellow Floral Straight Kurta",
+            "price":"1960",
+            "src": "https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/2159231/2019/6/10/3a1a61f1-7325-4ca7-bfe2-9119f738872c1560167833508-W-Women-Off-White--Yellow-Floral-Print-Straight-Kurta-221560-1.jpg"
+            }
+            ,
+    "6" : {
+            "brand": "Women White Design Kurta",
+            "price":"1460",
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1fDDSgP9rfxU0WMLHeJoB88ikFsU7WphTTw&usqp=CAU"
+            }
+            ,
+    "7" : {
+             "brand": "Women Mustard Straight Kurta",
+             "price":"990",
+             "src": "https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/1994175/2017/7/26/11501071623984-HERENOW-Women-Mustard-Solid-Straight-Kurta-8171501071623783-1.jpg"
+            }
+            ,
+    "8" : {
+            "brand": "Women Printed Line Kurta",
+            "price":"980",
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMUSf2JhYiOC8uYTLKYMVl4W7_lTD6CILiuw&usqp=CAU"
+            }
+            ,
+    "9" : {
+            "brand": "Women Printed Line Kurta",
+            "price":"1890",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2064367/2019/7/12/4977e5d2-7142-4be8-996d-a5f1e95741d01562901772572-Biba-Women-Blue-Printed-A-line-Kurta-with-Ethnic-Jacket-4271-1.jpg"
+            }
+            ,
+    "10" : {
+            "brand": "Women Olive Green Printed Kurta",
+            "price":"2000",
+            "src": "https://assets.myntassets.com/h_480,q_100,w_360/v1/assets/images/8124887/2019/1/14/3ab7b838-8d2c-4a9d-8b76-320b1eeee2681547444882958-Moda-Rapido-Women-Olive-Green--White-Printed-Straight-Kurta--1.jpg"
+            }
+            ,
+    "11" : {
+             "brand": "Rapido Women Green Printed",
+             "price":"1860",
+             "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/1810628/2017/5/19/11495196895724-Moda-Rapido-Women-Green-Printed-Straight-Kurta-8571495196895480-1.jpg"
+            }
+            ,
+    "12" : {
+            "brand": "Moda Rapido Women Kurta",
+            "price":"1486",
+            "src": "https://assets.myntassets.com/h_480,q_100,w_360/v1/assets/images/4376085/2018/4/10/11523345384693-Moda-Rapido-Women-Kurtas-9651523345384580-1.jpg"
+            }
+            ,
+    "13" : {
+            "brand": "Moda Rapido Women Dress",
+            "price":"1528",
+            "src": "https://assets.myntassets.com/h_600,q_95,w_440/v1/assets/images/8203709/2018/12/18/14c41f54-5565-4680-a4ad-5ea5fbd9d3041545126656338-Moda-Rapido-Women-Dresses-2941545126654951-1.jpg"
+            }
+            ,
+    "14" : {
+            "brand": "Rapido Women Floral Dress",
+            "price":"1760",
+            "src": "https://assets.myntassets.com/h_600,q_95,w_440/v1/assets/images/productimage/2019/5/9/1cee253f-7de0-4d59-af3b-4828d9d41d5e1557408885187-1.jpg"
+            }
+            ,
+    "15" : {
+            "brand": "Women Dark Green Kurta",
+            "price":"1685",
+            "src": "https://assets.myntassets.com/h_600,q_95,w_440/v1/assets/images/productimage/2019/5/9/4a8ff0b3-5215-4fea-aae4-628de44f05821557407975029-1.jpg"
+            }
+            ,
+    "16" : {
+             "brand": "Stylish Blue Straight Kurta",
+             "price":"1580",
+             "src": "https://i.pinimg.com/originals/84/93/5a/84935a9ff0d88d962a0721f334c12609.jpg"
+            }
+            ,
+    "17" : {
+            "brand": "Abhishti Green Chanderi Kurta",
+            "price":"1650",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/1208138/2016/2/5/11454676144214-Abhishti-Green-Chanderi-Kurta-9401454676143827-1.jpg"
+            }
+            ,
+    "18" : {
+            "brand": "Taupe Blue Yoke Design Kurta",
+            "price":"1740",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/6920606/2019/4/16/995239a3-ecc7-47c1-b203-554ef477a32c1555416877531-W-Women-Taupe--Blue-Yoke-Design-A-Line-Kurta-861555416876375-1.jpg"
+            }
+            ,
+    "19" : {
+            "brand": "Moda Rapido Women Dress",
+            "price":"1590",
+            "src": "https://assets.myntassets.com/h_640,q_100,w_480/v1/assets/images/2889083/2018/3/23/11521797759064-Moda-Rapido-Women-Dresses-3091521797758911-1.jpg"
+            }
+            ,
+    "20" : {
+            "brand": "Green Printed Round Neck T-shirt",
+            "price":"1620",
+            "src": "https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/8813269/2019/11/22/ee7347a6-5e6d-44ef-ab01-c71db3adaa631574427150244-Moda-Rapido-Women-Green-Printed-Round-Neck-T-shirt-209157442-1.jpg"
+            }
+            ,
+    "21" : {
+            "brand": "Printed Floral Long Top",
+            "price":"890",
+            "src": "https://assets.myntassets.com/h_600,q_95,w_440/v1/assets/images/productimage/2018/8/14/bacc4af0-4b68-4a09-941a-0ebf7022701d1534254728913-1.jpg"
+            }
+            ,
+    "22" : {
+             "brand": "Moda Rapido Women Kurta",
+             "price":"1350",
+             "src": "https://assets.myntassets.com/h_480,q_100,w_360/v1/assets/images/4322782/2018/4/6/11522992169601-Moda-Rapido-Women-Kurtas-9071522992169485-1.jpg"
+            }
+            ,
+    "23" : {
+            "brand": "Women Pink White Printed Kurta",
+            "price":"1360",
+            "src": "https://assets.myntassets.com/h_480,q_100,w_360/v1/assets/images/5387906/2018/5/7/11525689034730-Moda-Rapido-Women-Pink--White-Printed-Straight-Kurta-4241525689034640-1.jpg"
+            }
+            ,
+    "24" : {
+            "brand": "Women White Printed Empire Dress",
+            "price":"1430",
+            "src": "https://assets.myntassets.com/h_640,q_100,w_480/v1/assets/images/7008794/2018/8/13/485ba4da-4a75-4976-a09a-4c6379ac07fb1534157102890-Moda-Rapido-Women-Off-White-Printed-Empire-Dress-2031534157102469-1.jpg"
+            }
+            ,
+    "25" : {
+            "brand": "Moda Rapido Women Kurti",
+            "price":"1610",
+            "src": "https://assets.myntassets.com/h_640,q_100,w_480/v1/assets/images/7637848/2018/11/2/f42599f8-8993-4fa1-9f4f-9d48dae918b01541141651273-Moda-Rapido-Women-Dresses-5391541141651116-1.jpg"
+            }
+            ,
+    "26" : {
+            "brand": "Moda Rapido Women Kurtas",
+            "price":"1320",
+            "src": "https://assets.myntassets.com/h_480,q_100,w_360/v1/assets/images/4315278/2018/4/10/11523351806639-Moda-Rapido-Women-Kurtas-8441523351806547-1.jpg"
+            }
+            ,
+    "27" : {
+             "src": "https://assets.myntassets.com/h_640,q_100,w_480/v1/assets/images/2129021/2017/9/20/11505911860299-Moda-Rapido-Women-Dresses-7471505911860142-1.jpg",
+             "price":"1470",
+             "brand": "Moda Rapido Women Dresses"
+            }
+            ,
+    "28" : {
+            "brand": "Women Kurta",
+            "price":"1920",
+            "src": "https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/10938862/2019/11/21/35b15618-a56e-41d1-9468-a3978d00a2751574343915912-W-Women-Kurtas-9091574343914873-1.jpg"
+            }
+            ,
+    "29" : {
+            "brand": "Libas Women Kurta",
+            "price":"1680",
+            "src": "https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/9329399/2019/4/24/8df4ed41-1e43-4a0d-97fe-eb47edbdbacd1556086871124-Libas-Women-Kurtas-6161556086869769-1.jpg"
+            }
+            ,
+    "30" : {
+            "brand": "White Black Printed Kurta",
+            "price":"1530",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/1829475/2017/12/27/11514355699661-Moda-Rapido-Off-white--Black-Printed-Straight-Kurta-4331514355699540-1.jpg"
+            }
+            ,
+    "31" : {
+             "brand": "Anubhutee Women Kurta",
+             "price":"1410",
+             "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/11053736/2019/12/13/a5202053-08de-443f-a777-4823e37424911576220397091-Anubhutee-Women-Kurtas-5341576220394636-1.jpg"
+            }
+            ,
+    "32" : {
+            "brand": "Women Checks Printed Kurta ",
+            "price":"1530",
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaCfglEg3ktzDommbASrn2Wtp6gz_ykZqC7g&usqp=CAU"
+            }
+            ,
+    "33" : {
+            "brand": "Yellow Printed Kurta",
+            "price":"1860",
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB5Ot-q5vMUGX498P9d8A8HKPTxIGtEa3whA&usqp=CAU"
+            }
+            ,
+    "34" : {
+            "brand": "Women Pink Maxi Dress",
+            "price":"1340",
+            "src": "https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/10308653/2019/7/29/4b4374d2-0067-40c3-bc30-7a6f2d228df71564401122087-SASSAFRAS-Women-Pink-Maxi-Dress-4111564401120260-1.jpg"
+            }
+            ,
+    "35" : {
+            "brand": "Women Grey Printed T-shirt",
+            "price":"1490",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9435667/2019/11/27/eb0267a8-abb1-4026-86bd-65093924ca671574833818175-Moda-Rapido-Women-Grey-Printed-Round-Neck-T-shirt-9815748338-1.jpg"
+            }
+            ,
+    "36" : {
+             "brand": "Women Black Printed Fit Dress",
+             "price":"1869",
+             "src": "https://assets.myntassets.com/h_640,q_100,w_480/v1/assets/images/1916222/2017/6/15/11497525157140-Moda-Rapido-Women-Black-Printed-Fit-and-Flare-Dress-5241497525156934-1.jpg"
+            }
+            ,
+    "37" : {
+            "brand": "White Printed Straight Kurta",
+            "price":"1920",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9252955/2019/4/17/5b8d2dd5-24b5-4b25-9f0d-06b1078451ae1555483092177-anayna-Women-Green--White-Printed-Straight-Kurta-25115554830-1.jpg"
+            }
+            ,
+    "38" : {
+            "brand": "Women Black-White Printed Kurta",
+            "price":"1860",
+            "src": "https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/2003976/2019/7/31/5ed3f829-d5cf-4e26-b1ac-f1dd99ad3f211564552913625-W-Women-Black--Off-White-Printed-Straight-Kurta-120156455291-1.jpg"
+            }
+            ,
+    "39" : {
+            "brand": "Anouk Women Kurta",
+            "price":"1450",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/10297731/2019/9/5/adb57810-54ff-4800-99f7-75dc14d826191567662338191-Anouk-Women-Kurtas-2841567662337268-1.jpg"
+            }
+            ,
+    "40" : {
+            "brand": "Sangria Women Black Off White Printed",
+            "price":"1630",
+            "src": "https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/9772723/2019/11/27/e220f36c-8ca1-4123-afb9-030c68e7c1fc1574843359981-Sangria-Women-Black--Off-White-Printed-Straight-Kurta-971574-1.jpg"
+            }
+            ,
+    "41" : {
+            "brand": "AHIKA Women Burgundy Pink",
+            "price":"1950",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/11056134/2019/12/5/b62de3d7-f061-47a3-ba09-7b08819241121575540157543-AHIKA-Women-Burgundy--Pink-Printed-Straight-Kurta-2231575540-1.jpg"
+            }
+            ,
+    "42" : {
+             "brand": "Nayo Women Kurta",
+             "price":"1870",
+             "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7723473/2018/11/13/2a89ad5d-0689-41e8-99be-2d660defcae11542112452161-Nayo-Women-Kurtas-9051542112451950-1.jpg"
+            }
+            ,
+    "43" : {
+            "brand": "Ahalyaa Women Navy Blue Red Printed",
+            "price":"1350",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/8919453/2019/3/6/6f197c1b-0d0a-4f65-9e4b-bfba9ee6395b1551875953776-Ahalyaa-Women-Navy-Blue--Red-Printed-Straight-Kurta-66115518-1.jpg"
+            }
+            ,
+    "44" : {
+            "brand": "Vishudh Women Charcoal Printed",
+            "price":"1460",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/4882558/2019/2/6/2bed72b6-e716-446f-a0fc-c3fd92fc67081549451609347-Vishudh-Women-Charcoal-Printed-Straight-Kurta-14715494516078-1.jpg"
+            }
+            ,
+    "45" : {
+            "brand": "Jaipur Kurti Women Kurta",
+            "price":"1510",
+            "src": "https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/2389786/2018/1/22/11516605060272-Jaipur-Kurti-Women-Kurta-Sets-2241516605060084-1.jpg"
+            }
+            ,
+    "46" : {
+            "brand": "Harpa Women Dress",
+            "price":"1380",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7578935/2018/10/23/d7b740bc-e00e-4bec-97aa-65016f8ff2e71540289479612-Harpa-Women-Dresses-2331540289479465-1.jpg"
+            }
+            ,
+    "47" : {
+             "brand": "Floral Yellow Gown",
+             "price":"1420",
+             "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/6625378/2018/6/5/fcec8d8e-4253-4fa4-ae6e-c6805b3b8fd31528183265021-na-2331528183264786-1.jpg"
+            }
+            ,
+    "48" : {
+            "brand": "Harpa Women Dress",
+            "price":"1390",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7578929/2018/10/23/86988cdc-cbe3-4b13-93f9-b37ad571b4761540274855321-Harpa-Women-Dresses-9171540274855158-1.jpg"
+            }
+            ,
+    "49" : {
+            "brand": "Rapido Women Dress",
+            "price":"1280",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7578940/2018/10/23/fe701151-69e6-4e20-9e2a-ace63081a8e11540282217137-Harpa-Women-Dresses-191540282216937-5.jpg"
+            }
+            ,
+    "50" : {
+            "brand": "Jaipur Kurti Women Turquoise Blue",
+            "price":"1430",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/5571465/2018/5/15/2ac3672a-d16d-4aec-b853-30a3f50708021526387316249-Jaipur-Kurti-Women-Turquoise-Blue--Green-Printed-Straight-Kurta-5621526387316032-1.jpg"
+            }
+            ,
+    "51" : {
+            "brand": "Anouk Women Peach Printed Kurta",
+            "price":"1730",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2322979/2018/2/13/11518506064968-Anouk-Women-Peach-Coloured-Printed-Straight-Kurta-6851518506064751-1.jpg"
+            }
+            ,
+    "52" : {
+             "brand": "AKS Women Navy Printed",
+             "price":"1830",
+             "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2463738/2018/2/23/11519378307497-AKS-Women-Navy--Off-White-Printed-Straight-Kurta-9971519378307264-1.jpg"
+            }
+            ,
+    "53" : {
+            "brand": "Orange red Floral Printed",
+            "price":"1190",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2019/5/14/bdc908b6-9266-4a8d-a01c-3870ab2352b61557795515101-1.jpg"
+            }
+            ,
+    "54" : {
+            "brand": "Vishudh Gold Toned Printed Kurta",
+            "price":"1390",
+            "src": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2110558/2018/4/13/11523617167748-Vishudh-Women-Black--Gold-Toned-Printed-Straight-Kurta-9041523617167566-1.jpg"
+            }
+        
+};
