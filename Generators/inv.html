@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Invoice</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
+		<script src="script.js"></script>
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body class="container">
+        
+		<header>
+			<h1 style="text-shadow: 1px 1px black;font-weight: 700;"><strong>INVOICE</strong></h1>
+			<address contenteditable>
+				<p style="text-shadow: 1px 1px black;font-size: 2rem; ">Armaan Jewellers</p>
+			</address>  
+			<span><img alt="" src="https://cdn.shopify.com/s/files/1/0026/4155/9617/files/Armans_Jewellers_logo-1_1200x.jpg?v=1591846456" width="250"><input type="file" accept="image/*"></span>
+		</header>
+		<article>
+			<h1 style="color: black;">Recipient</h1>			
+            <address contenteditable style="font-size: 1rem;">
+				<p>Recipient:</p>
+				<p>Name</p>
+                <p>Address</p>
+                <p>Phone</p>
+				
+			</address>
+			<table class="meta">
+				<tr>
+					<th><span contenteditable>Invoice #</span></th>
+					<td><span contenteditable></span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable>Date</span></th>
+					<td><span contenteditable>January 1, 2012</span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable>Amount Due</span></th>
+					<td><b><span id="prefix" contenteditable>&#8377;</span><span></span></b></td>
+				</tr>
+			</table>
+			<table class="inventory">
+				<thead>
+					<tr>
+						<th><span contenteditable>Item</span></th>
+						<th><span contenteditable>Description</span></th>
+						<th><span contenteditable>Rate</span></th>
+						<th><span contenteditable>Quantity</span></th>
+						<th><span contenteditable>Price</span></th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+			<a class="add" style="width: fit-content;">+</a>
+			<table class="balance">
+				<tr>
+					<th><span >Total</span></th>
+					<td><span data-prefix>&#8377;</span><span></span></td>
+				</tr>
+                <tr>
+					<th><span >GST(5%)</span></th>
+					<td><span data-prefix>&#8377;</span><span></span></td>
+				</tr>
+                <tr>
+					<th><span >Grand Total</span></th>
+					<td><b><span data-prefix>&#8377;</span><span></span></b></td>
+				</tr>
+			</table>
+		</article>
+        <footer>
+            <center>
+            <span class="text-secondary-d1 text-105">Thank you for your business</span>
+        </center>
+		<right>
+			<button class="btn btn-primary" id="printbtn" onclick="window.print()" >Generate PDF</button>
+		</right>
+        </footer>
+  
+	</body>
+</html>
